@@ -1,0 +1,14 @@
+[Unit]
+Description=AiXY2.O remote microphone
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/aixy/AIXY-EXTRA/main.py
+Restart=on-failure
+User=aixy
+WorkingDirectory=/home/aixy/AIXY-EXTRA
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
