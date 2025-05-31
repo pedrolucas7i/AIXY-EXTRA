@@ -18,6 +18,7 @@
 
 import time
 from socketio import Client
+import env
 
 socketio = Client()
 socketio.connect(env.REMOTE_ROBOT_URL)
