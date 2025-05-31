@@ -32,6 +32,7 @@ while True:
         if speaked:
             print(f"[Você disse] {speaked}")
             socketio.emit('aiquestion', speaked)
+            time.sleep(3)
     except Exception as e:
         print(f"An error occurred: {e}")
         time.sleep(1)  # Wait before retrying
