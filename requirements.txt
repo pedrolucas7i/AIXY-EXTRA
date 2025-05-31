@@ -3,3 +3,4 @@ numpy
 sounddevice
 requests
 python-socketio
+websocket-client
